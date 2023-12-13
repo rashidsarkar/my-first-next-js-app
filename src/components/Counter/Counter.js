@@ -7,12 +7,10 @@ function Counter() {
   return (
     <div>
       <h2>Counter : {counter}</h2>
-      <button onClick={() => setCounter((prevCounter) => prevCounter + 1)}>
+      <button onClick={() => setCounter((prevCounter) => c + 1)}>
         Increase
       </button>
-      <button onClick={() => setCounter((preveCounter) => preveCounter - 1)}>
-        Decrease
-      </button>
+      <button onClick={() => setCounter((c) => c - 1)}>Decrease</button>
     </div>
   );
 }
